@@ -13,5 +13,6 @@
     <modules>
         <module>cloud-eureka</module>
         <module>api-passenger</module>
+        <module>demo</module>
     </modules>
 </project>

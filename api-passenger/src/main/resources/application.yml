@@ -4,9 +4,9 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7900/eureka/
+      defaultZone: http://localhost:7901/eureka/
     registry-fetch-interval-seconds: 30
-    enabled: false
+    enabled: true
       #,http://localhost:7901/eureka/,http://localhost:7902/eureka/
   instance:
     lease-renewal-interval-in-seconds: 30
@@ -16,5 +16,8 @@ spring:
     name: api-passenger
 logging:
   level:
-    org.springframework: debug
-
+    root: debug
+ribbon:
+  eager-load:
+    enabled: true
+    clients: demo
